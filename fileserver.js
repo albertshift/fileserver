@@ -95,7 +95,6 @@ try {
     response.writeHead(200, headers);
     var fileStream = fs.createReadStream(filename, {
                      'flags': 'r',
-                     'encoding': 'binary',
                      'mode': 0666,
                      'bufferSize': 65536});
     fileStream.pipe(response);
